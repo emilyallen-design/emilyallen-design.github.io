@@ -169,3 +169,116 @@ grid-column:span 1;
 font-size:3.2rem;
 }
 }
+
+
+/* ===== FINAL CONSOLIDATED CLEANUP ===== */
+
+:root{
+  --navy:#08133A;
+  --cream:#FBF8E4;
+  --text:#D7DEED;
+}
+
+/* Accessibility */
+body{
+  overflow-x:hidden;
+  background:var(--navy);
+}
+
+p,
+.hero-sub,
+.hero-intro,
+.caption,
+.mv,
+.ml{
+  color:var(--text)!important;
+}
+
+/* Unified nav */
+nav{
+  background:var(--navy)!important;
+  border-bottom:1px solid rgba(255,255,255,.08)!important;
+}
+
+.nav-logo img{
+  height:52px!important;
+}
+
+.nav-center a,
+.nav-right a{
+  color:rgba(251,248,228,.78)!important;
+}
+
+.nav-center a:hover,
+.nav-right a:hover,
+.nav-center a.active{
+  color:var(--cream)!important;
+}
+
+/* Remove broken wave remnants */
+.wave-down,
+.wave-up,
+.wave-divider{
+  display:none!important;
+}
+
+/* Case-study consistency */
+.section-cream,
+.section-beige{
+  background:var(--navy)!important;
+}
+
+.section-cream h1,
+.section-cream h2,
+.section-cream h3,
+.section-beige h1,
+.section-beige h2,
+.section-beige h3{
+  color:var(--cream)!important;
+}
+
+.section-cream p,
+.section-beige p{
+  color:var(--text)!important;
+}
+
+/* Image polish */
+img{
+  max-width:100%;
+}
+
+.artifact img,
+.cs-img-wrap img,
+.hero-banner img{
+  border-radius:24px!important;
+}
+
+.cs-img-wrap{
+  overflow:hidden;
+  border-radius:24px!important;
+}
+
+/* Homepage spacing */
+.hero{
+  padding-top:220px!important;
+}
+
+.hero-intro{
+  color:var(--cream)!important;
+  font-size:1.2rem!important;
+  line-height:1.7!important;
+}
+
+/* WestJet image grid */
+.image-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:28px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .hero{
+    padding-top:150px!important;
+  }
+}
