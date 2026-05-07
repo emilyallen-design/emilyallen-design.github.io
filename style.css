@@ -410,12 +410,13 @@ nav {
 }
 
 .hero {
+  background: var(--navy);
   min-height: 92vh;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 0 48px;
+  padding: 120px 48px 80px;
 }
 
 .hero-text {
@@ -532,7 +533,7 @@ nav {
 
   .hero {
     min-height: 82vh;
-    padding: 0 20px;
+    padding: 100px 20px 60px;
   }
 
   .hero-headline {
